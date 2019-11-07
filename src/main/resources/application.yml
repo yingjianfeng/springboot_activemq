@@ -1,0 +1,12 @@
+server:
+  port: 80
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616 #自己的mq服务器地址
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: true # false = queue  true = topic
+myqueue: boot-activemq-queue
+mytopic: boot-activemq-topic
+
